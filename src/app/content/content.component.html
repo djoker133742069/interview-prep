@@ -9,7 +9,7 @@
         <tbody>
             <tr style = "text-align: center;" *ngFor = "let j of questionList[topic]; let i = index">
                 <td>{{i+1}}</td>
-                <td><a [href] = "j.link">{{j.name}}</a></td>
+                <td><a [href] = "j.link" target = "_blank">{{j.name}}</a></td>
                 <td>NO</td>
             </tr>
         </tbody>
