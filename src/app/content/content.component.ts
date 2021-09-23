@@ -83,7 +83,43 @@ export class ContentComponent implements OnInit {
       {
         link: "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
         name: "Longest Substring Without Repeating Characters"
-      }
+      },
+      {
+        link: "https://leetcode.com/problems/longest-repeating-character-replacement/",
+        name: "Longest Repeating Character Replacement"
+      },
+      {
+        link: "https://leetcode.com/problems/minimum-window-substring/",
+        name: "Minimum Window Substring"
+      },
+      {
+        link: "https://leetcode.com/problems/valid-anagram/",
+        name: "Valid Anagram"
+      },
+      {
+        link: "https://leetcode.com/problems/group-anagrams/",
+        name: "Group Anagrams"
+      },
+      {
+        link: "https://leetcode.com/problems/valid-parentheses/",
+        name: "Valid Parentheses"
+      },
+      {
+        link: "https://leetcode.com/problems/valid-palindrome/",
+        name: "Valid Palindrome"
+      },
+      {
+        link: "https://leetcode.com/problems/longest-palindromic-substring/",
+        name: "Longest Palindromic Substring"
+      },
+      {
+        link: "https://leetcode.com/problems/palindromic-substrings/",
+        name: "Palindromic Substrings"
+      },
+      {
+        link: "https://leetcode.com/problems/encode-and-decode-strings/",
+        name: "Encode and Decode Strings"
+      },
     ]
   }; 
 }
