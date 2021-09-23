@@ -1,0 +1,45 @@
+<nz-layout>
+  <nz-header style = "color: white;">Interview Prep</nz-header>
+    <nz-layout>
+      <nz-sider nzCollapsible [(nzCollapsed)] = "isCollapsed" nzWidth = "17rem">
+        <ul nz-menu nzTheme="dark" nzMode="inline">
+          <li nz-submenu nzTitle="Basic Data Structures" nzIcon="user">
+            <ul>
+              <li nz-menu-item (click) = "selectedTopic('Arrays')">Arrays</li>
+              <li nz-menu-item (click) = "selectedTopic('Strings')">Strings</li>
+              <li nz-menu-item (click) = "selectedTopic('Linked Lists')">Linked Lists</li>
+              <li nz-menu-item (click) = "selectedTopic('Stacks')">Stacks</li>
+              <li nz-menu-item (click) = "selectedTopic('Queues')">Queues</li>
+              <li nz-menu-item (click) = "selectedTopic('Hash Tables')">Hash Tables</li>
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="Intermediate Data Structures" nzIcon="team">
+            <ul>
+              <li nz-menu-item (click) = "selectedTopic('Trees')">Trees</li>
+              <li nz-menu-item (click) = "selectedTopic('Binar Search Trees')">Binary Search Tree</li>
+              <li nz-menu-item (click) = "selectedTopic('Custom DS')">Custom DS</li>
+            </ul>
+          </li>
+          <li nz-menu-item
+          nz-tooltip
+          nzTooltipPlacement="right"
+          nzTooltipTitle = 'Recursion'
+          (click) = "selectedTopic('Recursion')">
+            <i nz-icon nzType="file"></i>
+            <span>Recursion</span>
+          </li>
+          <li nz-menu-item 
+          nz-tooltip
+          nzTooltipPlacement="right"
+          nzTooltipTitle = 'Dynamic Programming'
+          (click) = "selectedTopic('Dynamic Programming')">
+            <i nz-icon nzType="file"></i>
+            <span>Dynamic Programming</span>
+          </li>
+        </ul>
+      </nz-sider>
+      <nz-content>
+        <app-content [topic] = "contentTopic"></app-content>
+      </nz-content> 
+    </nz-layout>
+</nz-layout>
